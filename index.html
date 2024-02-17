@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skywolfhaley/projects</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden; /* Hide overflow to prevent scrolling */
+    }
+
+    .background-container {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("https://files.catbox.moe/53u29x.jpg");
+      background-size: cover; /* Crop the background image to cover the entire container */
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative; /* Make the container relative for absolute positioning of top-left text */
+    }
+
+    @font-face {
+      font-family: 'cooper-black-std';
+      src: url('CooperStdBlack.ttf') format('truetype');
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .header h1 {
+      font-family: 'cooper-black-std', 'Comic Sans MS', sans-serif;
+      font-weight: bold;
+      color: #FCD91D; /* Yellow color for main text */
+      margin: 0;
+      font-size: 5em;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .subtext {
+      font-family: 'cooper-black-std', sans-serif;
+      color: #FCD91D; /* Yellow color for main text */
+      font-size: 1.5em;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .slash {
+      margin: 0 10px;
+      color: #425C6B; /* Bluish color for links and slash */
+      font-size: 1.5em; /* Adjust the size of the slash */
+    }
+
+    .link a {
+      text-decoration: none;
+      color: #FCD91D; /* Yellow color for links and slash */
+      font-family: 'cooper-black-std', sans-serif;
+      font-size: 1.5em;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .top-left-text {
+      font-family: 'cooper-black-std', sans-serif;
+      color: #FCD91D; /* Yellow color for top-left text */
+      font-size: 1em;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1; /* Ensure the top-left text is above the background */
+    }
+  </style>
+</head>
+<body>
+  <div class="background-container">
+    <div class="top-left-text">background by <a href="https://oddfuture.tumblr.com/" target="_blank">OFWGKTA</a></div>
+    <div class="header">
+      <h1>skywolfhaley/projects</h1>
+    </div>
+    <div class="subtext">
+      <span class="link"><a href="https://music.skywolfhaley.xyz" target="_blank">downloads</a></span>
+      <span class="slash">/</span>
+      <span class="link"><a href="https://wolf.skywolfhaley.xyz" target="_blank">personal</a></span>
+    </div>
+  </div>
+</body>
+</html>
